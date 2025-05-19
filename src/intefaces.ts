@@ -55,24 +55,25 @@ export type Type = {
   type: { name: string; url: string };
 };
 
+
 export interface Pokemon {
-  abilities: Array<Ability>;
+  abilities: any[];
   base_experience: number;
   cries: { latest: string; legacy: string };
-  forms: { name: string; url: string };
-  game_indices: Array<GameIndice>;
+  forms: any[];
+  game_indices: any[];
   height: number;
-  held_items?: [];
+  held_items: any[];
   id: number;
   is_default: boolean;
   location_area_encounters: string;
-  moves: Array<Move>;
+  moves: any[];
   name: string;
   order: number;
-  past_abilities: string;
-  past_types?: [];
+  past_abilities: any;
+  past_types: any[];
   species: { name: string; url: string };
-  stats: Array<Stat>;
-  types: Array<Type>;
+  stats: any[];
+  types: any[];
   weight: number;
 }
